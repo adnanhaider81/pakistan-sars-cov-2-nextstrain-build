@@ -1,0 +1,30 @@
+# Local input data
+data/
+*.fasta
+*.fasta.gz
+*.fasta.xz
+*.fa
+*.fa.gz
+*.fa.xz
+*.tsv
+*.tsv.gz
+*.tsv.xz
+*.tar
+*.tar.gz
+*.tar.xz
+
+# Nextstrain/ncov checkout and build outputs
+work/
+auspice/
+results/
+logs/
+benchmarks/
+.snakemake/
+
+# Local tool cache
+.local/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+*.swp

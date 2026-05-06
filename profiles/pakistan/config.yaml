@@ -1,0 +1,10 @@
+configfile:
+  - defaults/parameters.yaml
+  - my_profiles/pakistan/builds.yaml
+
+cores: 8
+keep-going: false
+printshellcmds: true
+show-failed-logs: true
+restart-times: 1
+set-threads: tree=4

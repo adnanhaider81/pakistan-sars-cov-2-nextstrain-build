@@ -1,0 +1,104 @@
+{
+  "title": "Genomic epidemiology of SARS-CoV-2 in Pakistan",
+  "build_url": "https://github.com/NIH-BIGVI-PAKISTAN/ncov/",
+  "maintainers": [
+    {
+      "name": "NIH Bioinformatics Group of Virology, Pakistan",
+      "url": "https://www.nih.org.pk/"
+    }
+  ],
+  "colorings": [
+    {
+      "key": "pango_lineage",
+      "title": "PANGO Lineage",
+      "type": "categorical"
+    },
+    {
+      "key": "GISAID_clade",
+      "title": "GISAID Clade",
+      "type": "categorical"
+    },
+    {
+      "key": "Nextstrain_clade",
+      "title": "Nextstrain Clade",
+      "type": "categorical"
+    },
+    {
+      "key": "division",
+      "title": "Admin Division",
+      "type": "categorical"
+    },
+    {
+      "key": "country",
+      "title": "Country",
+      "type": "categorical"
+    },
+    {
+      "key": "region",
+      "title": "Region",
+      "type": "categorical"
+    },
+    {
+      "key": "host",
+      "title": "Host",
+      "type": "categorical"
+    },
+    {
+      "key": "sex",
+      "title": "Sex",
+      "type": "categorical"
+    },
+    {
+      "key": "patient_age",
+      "title": "Patient Age",
+      "type": "continuous"
+    },
+    {
+      "key": "gisaid_epi_isl",
+      "type": "categorical"
+    },
+    {
+      "key": "genbank_accession",
+      "type": "categorical"
+    },
+    {
+      "key": "QC_overall_score",
+      "title": "Nextclade QC score",
+      "type": "continuous"
+    },
+    {
+      "key": "QC_overall_status",
+      "title": "Nextclade QC status",
+      "type": "categorical"
+    }
+  ],
+  "geo_resolutions": [
+    "division",
+    "country",
+    "region"
+  ],
+  "display_defaults": {
+    "color_by": "division",
+    "distance_measure": "num_date",
+    "geo_resolution": "division",
+    "map_triplicate": true,
+    "branch_label": "clade"
+  },
+  "filters": [
+    "Nextstrain_clade",
+    "pango_lineage",
+    "GISAID_clade",
+    "region",
+    "country",
+    "division",
+    "host",
+    "sex",
+    "QC_overall_status"
+  ],
+  "panels": [
+    "tree",
+    "map",
+    "entropy",
+    "frequencies"
+  ]
+}
