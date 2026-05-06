@@ -148,6 +148,7 @@ The final export creates Auspice v2 JSON files.
 The profile sets:
 
 - Title: `Genomic epidemiology of SARS-CoV-2 in Pakistan`.
+- Build URL: `https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build/`.
 - Maintainer: NIH Bioinformatics Group of Virology, Pakistan.
 - Default color: `division`.
 - Default geographic resolution: `division`.

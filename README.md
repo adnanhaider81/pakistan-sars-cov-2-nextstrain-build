@@ -2,8 +2,11 @@
 
 This repository documents a reproducible workflow for building the Pakistan SARS-CoV-2 Nextstrain dataset served at:
 
+- Maintained workflow repository: https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build
 - Nextstrain community build: https://nextstrain.org/community/NIH-BIGVI-PAKISTAN/ncov/Pakistan
-- Community Auspice JSON repository: https://github.com/NIH-BIGVI-PAKISTAN/ncov
+- NIH-BIGVI Auspice JSON publishing repository: https://github.com/NIH-BIGVI-PAKISTAN/ncov
+
+This repository is maintained from the `adnanhaider81` GitHub account. The generated Auspice JSON files are published to `NIH-BIGVI-PAKISTAN/ncov`, which is the repository served by Nextstrain community hosting.
 
 The repository contains the Pakistan build profile, helper scripts, and step-by-step instructions. It does not contain GISAID sequence data or generated Auspice JSON outputs.
 
@@ -61,7 +64,7 @@ If `snakemake` and `augur` are not installed, install the Nextstrain command lin
 Clone this repository:
 
 ```bash
-git clone https://github.com/NIH-BIGVI-PAKISTAN/pakistan-sars-cov-2-nextstrain-build.git
+git clone https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build.git
 cd pakistan-sars-cov-2-nextstrain-build
 ```
 
