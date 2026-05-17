@@ -190,7 +190,7 @@ docs/build-method.md      Detailed build explanation
 
 Please cite the archived Zenodo release when using this workflow:
 
-Haider, S. A. (2026). Pakistan SARS-CoV-2 Nextstrain Build (v0.1.1). Zenodo. https://doi.org/10.5281/zenodo.20257882
+Haider, S. A. (2026). Pakistan SARS-CoV-2 Nextstrain Build Workflow (v0.1.1). Zenodo. https://doi.org/10.5281/zenodo.20257882
 
 The all-version Zenodo concept DOI is https://doi.org/10.5281/zenodo.20257431.
 
