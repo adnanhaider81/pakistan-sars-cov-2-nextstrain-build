@@ -1,4 +1,4 @@
-# Pakistan SARS-CoV-2 Nextstrain Build
+# Pakistan SARS-CoV-2 Nextstrain Build Workflow
 
 [![DOI](https://zenodo.org/badge/1231056402.svg)](https://zenodo.org/badge/latestdoi/1231056402)
 [![Smoke test](https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build/actions/workflows/smoke-test.yml)
@@ -13,7 +13,7 @@ This repository is maintained from the `adnanhaider81` GitHub account. The gener
 
 The repository contains the Pakistan build profile, helper scripts, and step-by-step instructions. It does not contain GISAID sequence data or generated Auspice JSON outputs.
 
-## Portfolio quick view
+## Workflow overview
 
 This repository shows the operational side of public pathogen-genomics communication: preparing a Pakistan-specific Nextstrain profile, running the official `nextstrain/ncov` workflow with local GISAID inputs, validating Auspice JSON outputs, and publishing the public community dataset through a separate repository.
 
@@ -28,19 +28,6 @@ flowchart LR
   F --> G["Community repository"]
   G --> H["Nextstrain page"]
 ```
-
-## Public repository checklist
-
-| Item | Status |
-| --- | --- |
-| README and method documentation | Present |
-| Reproducible profile/scripts | `profiles/` and `scripts/` |
-| Tests or smoke checks | Shell syntax and JSON/YAML parsing checks |
-| Example or synthetic data | Not included because the workflow depends on restricted GISAID inputs |
-| Data privacy note | Present; no GISAID FASTA, metadata, or generated full JSON outputs are committed |
-| License and citation metadata | Present |
-| Container recipe | `Dockerfile` using the official Nextstrain base image |
-| Zenodo DOI | [10.5281/zenodo.20257882](https://doi.org/10.5281/zenodo.20257882) |
 
 ## Overview
 

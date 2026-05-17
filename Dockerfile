@@ -1,4 +1,4 @@
-FROM nextstrain/base:build
+FROM nextstrain/base:latest
 
 WORKDIR /workspace
 COPY . /workspace
