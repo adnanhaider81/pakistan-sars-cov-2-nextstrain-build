@@ -1,0 +1,14 @@
+.git/
+.github/
+.local/
+.venv/
+__pycache__/
+*.pyc
+data-private/
+work/
+auspice/
+*.fasta
+*.fa
+*.tsv
+*.xz
+*.json.gz

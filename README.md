@@ -1,6 +1,7 @@
 # Pakistan SARS-CoV-2 Nextstrain Build
 
 [![DOI](https://zenodo.org/badge/1231056402.svg)](https://zenodo.org/badge/latestdoi/1231056402)
+[![Smoke test](https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build/actions/workflows/smoke-test.yml/badge.svg)](https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build/actions/workflows/smoke-test.yml)
 
 This repository documents a reproducible workflow for building the Pakistan SARS-CoV-2 Nextstrain dataset served at:
 
@@ -38,7 +39,7 @@ flowchart LR
 | Example or synthetic data | Not included because the workflow depends on restricted GISAID inputs |
 | Data privacy note | Present; no GISAID FASTA, metadata, or generated full JSON outputs are committed |
 | License and citation metadata | Present |
-| Container recipe | Uses the official Nextstrain environment; local container wrapper planned |
+| Container recipe | `Dockerfile` using the official Nextstrain base image |
 | Zenodo DOI | [10.5281/zenodo.20257432](https://doi.org/10.5281/zenodo.20257432) |
 
 ## Overview

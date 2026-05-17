@@ -1,0 +1,21 @@
+name: Smoke test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate helper scripts and profile JSON
+        run: |
+          bash -n scripts/install_linux_tools.sh
+          bash -n scripts/publish_to_community_repo.sh
+          bash -n scripts/run_build.sh
+          bash -n scripts/setup_ncov.sh
+          python -c "import json; json.load(open('profiles/pakistan/auspice_config.json', encoding='utf-8')); print('auspice_config.json OK')"
