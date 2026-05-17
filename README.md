@@ -10,6 +10,35 @@ This repository is maintained from the `adnanhaider81` GitHub account. The gener
 
 The repository contains the Pakistan build profile, helper scripts, and step-by-step instructions. It does not contain GISAID sequence data or generated Auspice JSON outputs.
 
+## Portfolio quick view
+
+This repository shows the operational side of public pathogen-genomics communication: preparing a Pakistan-specific Nextstrain profile, running the official `nextstrain/ncov` workflow with local GISAID inputs, validating Auspice JSON outputs, and publishing the public community dataset through a separate repository.
+
+```mermaid
+flowchart LR
+  A["Local GISAID metadata"] --> B["Local GISAID FASTA"]
+  B --> C["nextstrain/ncov profile"]
+  A --> C
+  C --> D["Nextclade QC"]
+  D --> E["Filtering and tree build"]
+  E --> F["Auspice JSON"]
+  F --> G["Community repository"]
+  G --> H["Nextstrain page"]
+```
+
+## Public repository checklist
+
+| Item | Status |
+| --- | --- |
+| README and method documentation | Present |
+| Reproducible profile/scripts | `profiles/` and `scripts/` |
+| Tests or smoke checks | Shell syntax and JSON/YAML parsing checks |
+| Example or synthetic data | Not included because the workflow depends on restricted GISAID inputs |
+| Data privacy note | Present; no GISAID FASTA, metadata, or generated full JSON outputs are committed |
+| License and citation metadata | Planned |
+| Container recipe | Uses the official Nextstrain environment; local container wrapper planned |
+| Zenodo DOI | Planned only if archived as a reusable workflow release |
+
 ## Overview
 
 The build uses the official Nextstrain `ncov` workflow with a Pakistan-specific profile.
