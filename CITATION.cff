@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use this workflow, please cite it using the metadata below."
 title: "Pakistan SARS-CoV-2 Nextstrain Build"
-version: "0.1.0"
+version: "0.1.1"
 date-released: "2026-05-17"
 type: software
 abstract: "A reproducible workflow repository for building and publishing a Pakistan SARS-CoV-2 Nextstrain community dataset using local GISAID inputs, the official nextstrain/ncov workflow, a Pakistan-specific profile, validation steps, and Auspice JSON publication helpers."
@@ -9,7 +9,6 @@ authors:
   - family-names: "Haider"
     given-names: "Syed Adnan"
 repository-code: "https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build"
-doi: "10.5281/zenodo.20257432"
 license: "MIT"
 keywords:
   - SARS-CoV-2

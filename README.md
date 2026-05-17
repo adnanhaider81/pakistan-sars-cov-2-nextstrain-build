@@ -40,7 +40,7 @@ flowchart LR
 | Data privacy note | Present; no GISAID FASTA, metadata, or generated full JSON outputs are committed |
 | License and citation metadata | Present |
 | Container recipe | `Dockerfile` using the official Nextstrain base image |
-| Zenodo DOI | [10.5281/zenodo.20257432](https://doi.org/10.5281/zenodo.20257432) |
+| Zenodo DOI | Pending Zenodo archive for `v0.1.1` |
 
 ## Overview
 
@@ -203,7 +203,7 @@ docs/build-method.md      Detailed build explanation
 
 Please cite the archived Zenodo release when using this workflow:
 
-Haider, S. A. (2026). Pakistan SARS-CoV-2 Nextstrain Build (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.20257432
+Haider, S. A. (2026). Pakistan SARS-CoV-2 Nextstrain Build (v0.1.1). Zenodo release DOI pending.
 
 The all-version Zenodo concept DOI is https://doi.org/10.5281/zenodo.20257431.
 
