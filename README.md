@@ -1,5 +1,7 @@
 # Pakistan SARS-CoV-2 Nextstrain Build
 
+[![DOI](https://zenodo.org/badge/1231056402.svg)](https://zenodo.org/badge/latestdoi/1231056402)
+
 This repository documents a reproducible workflow for building the Pakistan SARS-CoV-2 Nextstrain dataset served at:
 
 - Maintained workflow repository: https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build
@@ -37,7 +39,7 @@ flowchart LR
 | Data privacy note | Present; no GISAID FASTA, metadata, or generated full JSON outputs are committed |
 | License and citation metadata | Present |
 | Container recipe | Uses the official Nextstrain environment; local container wrapper planned |
-| Zenodo DOI | Pending Zenodo archive for `v0.1.0` |
+| Zenodo DOI | [10.5281/zenodo.20257432](https://doi.org/10.5281/zenodo.20257432) |
 
 ## Overview
 
@@ -195,6 +197,14 @@ profiles/pakistan/        Pakistan-specific Nextstrain profile files
 scripts/                  Setup, run, and publish helper scripts
 docs/build-method.md      Detailed build explanation
 ```
+
+## Citation
+
+Please cite the archived Zenodo release when using this workflow:
+
+Haider, S. A. (2026). Pakistan SARS-CoV-2 Nextstrain Build (v0.1.0). Zenodo. https://doi.org/10.5281/zenodo.20257432
+
+The all-version Zenodo concept DOI is https://doi.org/10.5281/zenodo.20257431.
 
 ## Troubleshooting
 

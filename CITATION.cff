@@ -9,6 +9,7 @@ authors:
   - family-names: "Haider"
     given-names: "Syed Adnan"
 repository-code: "https://github.com/adnanhaider81/pakistan-sars-cov-2-nextstrain-build"
+doi: "10.5281/zenodo.20257432"
 license: "MIT"
 keywords:
   - SARS-CoV-2
