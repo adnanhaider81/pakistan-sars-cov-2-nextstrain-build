@@ -35,9 +35,9 @@ flowchart LR
 | Tests or smoke checks | Shell syntax and JSON/YAML parsing checks |
 | Example or synthetic data | Not included because the workflow depends on restricted GISAID inputs |
 | Data privacy note | Present; no GISAID FASTA, metadata, or generated full JSON outputs are committed |
-| License and citation metadata | Planned |
+| License and citation metadata | Present |
 | Container recipe | Uses the official Nextstrain environment; local container wrapper planned |
-| Zenodo DOI | Planned only if archived as a reusable workflow release |
+| Zenodo DOI | Pending Zenodo archive for `v0.1.0` |
 
 ## Overview
 
