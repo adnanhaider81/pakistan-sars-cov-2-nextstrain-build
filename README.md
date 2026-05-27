@@ -186,6 +186,10 @@ scripts/                  Setup, run, and publish helper scripts
 docs/build-method.md      Detailed build explanation
 ```
 
+## Data governance
+
+See [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) for public-data, restricted-data, and sample-identifier handling rules.
+
 ## Citation
 
 Please cite the archived Zenodo release when using this workflow:
