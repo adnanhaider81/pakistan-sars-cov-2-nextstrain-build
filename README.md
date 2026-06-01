@@ -188,7 +188,7 @@ docs/build-method.md      Detailed build explanation
 
 ## Apptainer/Singularity container
 
-An HPC-friendly container recipe is provided at `containers/Apptainer.def`. Build it from the repository root:
+HPC-friendly Apptainer/Singularity support is available at `containers/Apptainer.def`. Build it from the repository root:
 
 ```bash
 apptainer build containers/pakistan-sars-cov-2-nextstrain-build.sif containers/Apptainer.def
