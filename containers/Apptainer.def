@@ -1,0 +1,13 @@
+Bootstrap: docker
+From: nextstrain/base:latest
+
+%labels
+    Author Syed Adnan Haider
+    Description Pakistan SARS-CoV-2 Nextstrain build runtime
+
+%environment
+    export NCOV_RELEASE="v16"
+    export PATH="/workspace/.local/bin:$PATH"
+
+%runscript
+    exec "$@"

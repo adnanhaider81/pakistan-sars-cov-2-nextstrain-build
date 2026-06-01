@@ -186,6 +186,16 @@ scripts/                  Setup, run, and publish helper scripts
 docs/build-method.md      Detailed build explanation
 ```
 
+## Apptainer/Singularity container
+
+An HPC-friendly container recipe is provided at `containers/Apptainer.def`. Build it from the repository root:
+
+```bash
+apptainer build containers/pakistan-sars-cov-2-nextstrain-build.sif containers/Apptainer.def
+```
+
+Use the image on systems where Apptainer or Singularity is preferred over Docker.
+
 ## Data governance
 
 See [DATA_GOVERNANCE.md](DATA_GOVERNANCE.md) for public-data, restricted-data, and sample-identifier handling rules.
