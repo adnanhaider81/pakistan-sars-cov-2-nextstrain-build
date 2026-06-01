@@ -13,6 +13,19 @@ This repository is maintained from the `adnanhaider81` GitHub account. The gener
 
 The repository contains the Pakistan build profile, helper scripts, and step-by-step instructions. It does not contain GISAID sequence data or generated Auspice JSON outputs.
 
+## Abbreviations
+
+| Term | Meaning |
+| --- | --- |
+| SARS-CoV-2 | Severe acute respiratory syndrome coronavirus 2 |
+| Nextstrain | Open-source platform for pathogen genome tracking |
+| Auspice | Nextstrain web visualization tool |
+| Augur | Nextstrain command-line analysis toolkit |
+| GISAID | Global Initiative on Sharing All Influenza Data |
+| TSV | Tab-separated values table |
+| JSON | JavaScript Object Notation data format |
+| QC | Quality control |
+
 ## Workflow overview
 
 This repository shows the operational side of public pathogen-genomics communication: preparing a Pakistan-specific Nextstrain profile, running the official `nextstrain/ncov` workflow with local GISAID inputs, validating Auspice JSON outputs, and publishing the public community dataset through a separate repository.
