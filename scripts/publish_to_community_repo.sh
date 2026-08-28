@@ -21,11 +21,24 @@ if [[ ! -d "${COMMUNITY_REPO}/.git" ]]; then
   exit 1
 fi
 
+AUSPICE_FILES=(
+  ncov_Pakistan.json
+  ncov_Pakistan_root-sequence.json
+  ncov_Pakistan_tip-frequencies.json
+)
+AUSPICE_EXPORTS=()
+
+for filename in "${AUSPICE_FILES[@]}"; do
+  AUSPICE_EXPORTS+=("${NCOV_DIR}/auspice/${filename}")
+done
+
+python3 "${PROJECT_ROOT}/scripts/validate_auspice_exports.py" "${AUSPICE_EXPORTS[@]}"
+
 mkdir -p "${COMMUNITY_REPO}/auspice"
 
-cp "${NCOV_DIR}/auspice/ncov_Pakistan.json" "${COMMUNITY_REPO}/auspice/ncov_Pakistan.json"
-cp "${NCOV_DIR}/auspice/ncov_Pakistan_root-sequence.json" "${COMMUNITY_REPO}/auspice/ncov_Pakistan_root-sequence.json"
-cp "${NCOV_DIR}/auspice/ncov_Pakistan_tip-frequencies.json" "${COMMUNITY_REPO}/auspice/ncov_Pakistan_tip-frequencies.json"
+for filename in "${AUSPICE_FILES[@]}"; do
+  cp "${NCOV_DIR}/auspice/${filename}" "${COMMUNITY_REPO}/auspice/${filename}"
+done
 
 git -C "${COMMUNITY_REPO}" status --short
 

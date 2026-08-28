@@ -180,16 +180,14 @@ The build follows these stages:
 
 More detail is available in [docs/build-method.md](docs/build-method.md).
 
-## Current Build Notes
+## Current Public Build
 
-The May 6, 2026 update used:
+The public build was updated on 28 August 2026. See the
+[live Nextstrain visualization](https://nextstrain.org/community/NIH-BIGVI-PAKISTAN/ncov/Pakistan)
+for the current dataset composition and results.
 
-- 5,351 Pakistan GISAID input genomes.
-- 5,059 final sequences after Nextstrain/Nextclade filtering.
-- 4,897 Pakistan sequences in the final tree.
-- 162 non-Pakistan reference/context sequences.
-
-The context sequences help with rooting and global clade placement. The public GitHub JSON file should remain below GitHub's 100 MB hard file-size limit.
+The publishing helper validates each Auspice JSON export and blocks files at
+GitHub's file-size limit before any community-repository commit is created.
 
 ## Repository Layout
 

@@ -18,4 +18,26 @@ jobs:
           bash -n scripts/publish_to_community_repo.sh
           bash -n scripts/run_build.sh
           bash -n scripts/setup_ncov.sh
+          python -m py_compile scripts/validate_auspice_exports.py
           python -c "import json; json.load(open('profiles/pakistan/auspice_config.json', encoding='utf-8')); print('auspice_config.json OK')"
+      - name: Test Auspice export guard
+        run: |
+          mkdir -p "${RUNNER_TEMP}/auspice-test"
+          printf '{"meta": {}, "tree": {}}\n' > "${RUNNER_TEMP}/auspice-test/ncov_Pakistan.json"
+          python scripts/validate_auspice_exports.py \
+            --max-bytes 1024 \
+            --warning-bytes 512 \
+            "${RUNNER_TEMP}/auspice-test/ncov_Pakistan.json"
+          if python scripts/validate_auspice_exports.py \
+            --max-bytes 2 \
+            --warning-bytes 1 \
+            "${RUNNER_TEMP}/auspice-test/ncov_Pakistan.json"; then
+            echo "Expected the file-size guard to fail." >&2
+            exit 1
+          fi
+          printf '{"meta": {}, "tree": ' > "${RUNNER_TEMP}/auspice-test/invalid.json"
+          if python scripts/validate_auspice_exports.py \
+            "${RUNNER_TEMP}/auspice-test/invalid.json"; then
+            echo "Expected invalid JSON to fail." >&2
+            exit 1
+          fi
